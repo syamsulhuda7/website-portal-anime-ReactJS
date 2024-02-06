@@ -3,14 +3,14 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const cutSynopsis = (synopsis) => {
-  const words = synopsis.split('');
-  const cut = words.slice(0, 100).join('');
-  if (words.length>20) {
-    return cut + '...'
-  }
-  return cut;
-};
+// const cutSynopsis = (synopsis) => {
+//   const words = synopsis.split('');
+//   const cut = words.slice(0, 100).join('');
+//   if (words.length>20) {
+//     return cut + '...'
+//   }
+//   return cut;
+// };
 
 export default class Cards extends React.Component {
   render() {
@@ -22,7 +22,7 @@ export default class Cards extends React.Component {
             <Card.Img variant="top" src={item.images.webp.image_url} />
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
-              <Card.Text>{cutSynopsis(item.synopsis)}</Card.Text>
+              <Card.Text>{item.year}</Card.Text>
               <Button variant="primary">Details</Button>
             </Card.Body>
           </Card>

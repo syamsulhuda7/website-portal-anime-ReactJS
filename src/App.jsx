@@ -1,12 +1,10 @@
 // import './App.css'
-import NavScroll from "./WebAnime/navbar";
-import Source from "./WebAnime/source";
+import Source from "./WebAnime/index";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      <NavScroll />
       <Source />
     </>
   );
